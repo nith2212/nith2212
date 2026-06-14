@@ -3,8 +3,6 @@
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Quicksand&weight=600&size=22&pause=1000&color=E8A0B4&center=true&vCenter=true&width=580&height=50&lines=backend+developer+🌸;building+agentic+ai+systems+✨;observe+→+reason+→+decide+→+act+💫;romanticizing+every+bug+fix+🌷;making+ai+that+actually+thinks+🩷" />
 
-<br/>
-
 </div>
 
 <div align="center">
@@ -16,8 +14,6 @@
 ```
 
 </div>
-
-<img src="https://capsule-render.vercel.app/api?type=soft&color=fff0f5,ffd6e0&height=4" />
 
 ---
 
@@ -83,8 +79,6 @@ Takes social determinants of health + clinical data, detects risk patterns, and 
 <td width="50%" valign="top">
 <div align="center">
 
-
-
 ### 📄 contract mining assistant
 
 </div>
@@ -131,10 +125,6 @@ A swipe-based photo declutter app — keep, delete, or revisit — wrapped in a 
 <div align="center">
 
 ## 🌷 other builds
-
-</div>
-
-<div align="center">
 
 | 🌸 | project | stack |
 |---|---|---|
