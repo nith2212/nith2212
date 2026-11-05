@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=ffb6c1,ffd6e0,ff9eb5&height=220&section=header&text=hi,%20i'm%20nithya%20🌸&fontSize=48&fontColor=c9748a&fontAlignY=38&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffb6c1,100:ff8fab&height=220&section=header&text=hi,%20i'm%20nithya%20🌸&fontSize=48&fontColor=ffffff&fontAlignY=38&animation=fadeIn" />
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Quicksand&weight=600&size=22&pause=1000&color=E8A0B4&center=true&vCenter=true&width=580&height=50&lines=backend+developer+🌸;building+agentic+ai+systems+✨;observe+→+reason+→+decide+→+act+💫;romanticizing+every+bug+fix+🌷;making+ai+that+actually+thinks+🩷" />
 
@@ -9,7 +9,7 @@
 
 ```
 🌱 currently → architecting agent systems that reason, not just respond
-🎯 focus     → llms · agent loops · grounded decision-making · rag
+🎯 focus     → llms · agent loops · mcp · grounded decision-making · evals
 💭 belief    → the interesting part of ai isn't the prompt — it's the loop
 ```
 
@@ -28,93 +28,54 @@
 <td width="50%" valign="top">
 <div align="center">
 
-### 🩷 buddy
+### 🩷 [buddy](https://github.com/nith2212/Buddy)
 
 </div>
 
-**a proactive accountability agent**
+**a companion that helps you start, by finding out why you're stuck**
 
-Not a chatbot. Buddy observes behavior, forms confidence-weighted hypotheses about *why* someone's stuck, retrieves its own behavioral framework before deciding, and initiates — before the user asks for help.
+Most productivity apps track the task. Buddy tracks the person. It works out the real reason you're avoiding something (unclear, too big, fear, boredom, tiredness), offers one tiny move, and learns what helps you each week.
 
 **the loop:**
-`observe → reason → retrieve → decide → act → learn`
+`check in → diagnose → offer one move → learn`
 
-- 3-layer state detection (behavioral · keyword · LLM)
-- decision step grounded in a retrieved framework via **Microsoft Foundry IQ**
-- two distinct LLM calls per turn — one decides, one speaks
-- full reasoning trace exposed in an "Agent Brain" view
+- code decides each step, the llm only words it: a stage machine per framework
+- every reply passes mechanical checks before it's sent (no therapy-speak, no moralizing)
+- echo learns weekly patterns in plain code, so it can't invent anything
+- 354 tests · hand-graded evals: framework adherence 25% → 86%
 
 ![Python](https://img.shields.io/badge/python-ffc0cb?style=flat-square&logoColor=black)
 ![FastAPI](https://img.shields.io/badge/fastapi-ffb6c1?style=flat-square&logoColor=black)
-![Groq](https://img.shields.io/badge/groq-ffd6e0?style=flat-square&logoColor=black)
-![Azure](https://img.shields.io/badge/azure_ai_foundry-ffe4e1?style=flat-square&logoColor=black)
-![React](https://img.shields.io/badge/react-fff0f5?style=flat-square&logoColor=black)
+![Claude](https://img.shields.io/badge/claude_haiku_5.5-ffd6e0?style=flat-square&logoColor=black)
+![Expo](https://img.shields.io/badge/expo-ffe4e1?style=flat-square&logoColor=black)
+![React Native](https://img.shields.io/badge/react_native-fff0f5?style=flat-square&logoColor=black)
 
 </td>
 <td width="50%" valign="top">
 <div align="center">
 
-### 🧬 long-term care plan curator
+### 🌍 [atlas](https://github.com/nith2212/atlas)
 
 </div>
 
-**agent-based healthcare planning** *(ongoing)*
+**agentic global health intelligence** · [live demo ↗](https://atlas-ui-drab.vercel.app/)
 
-Takes social determinants of health + clinical data, detects risk patterns, and generates personalized care guidelines for chronic conditions like COPD and diabetes.
+Ask a question in plain English. Atlas picks the right analytical tool on its own, computes the answer from WHO data, and streams back an evidence-backed result. No dashboards, no SQL.
 
 **the shape:**
-`patient data → risk detection → guideline generation`
+`question → llm picks mcp tools → tools compute → evidence streams back`
 
-- multi-source data synthesis (SDOH + clinical)
-- condition-specific reasoning pipelines
-- focused on explainable, guideline-backed output
+- a standalone mcp server, so any mcp client (even claude desktop) can reuse the tools
+- the model never computes a number, so it can't hallucinate one
+- direction-aware analytics: lower pollution ranks better, lower life expectancy worse
+- live progress and typed results over server-sent events
 
-![Agents](https://img.shields.io/badge/agents-ffc0cb?style=flat-square)
-![Clinical](https://img.shields.io/badge/clinical_data-ffb6c1?style=flat-square)
-![Risk](https://img.shields.io/badge/risk_modeling-ffd6e0?style=flat-square)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<div align="center">
-
-### 📄 contract mining assistant
-
-</div>
-
-**RAG-based chatbot for pharmacy contracts**
-
-Lets users query, edit, and version dense contract documents through natural language — grounded retrieval over real legal/clinical text.
-
-- document ingestion via `pymupdf`
-- vector search + grounded responses via **Vertex AI**
-- clause-level editing with version history
-
-![Vertex](https://img.shields.io/badge/vertex_ai-ffc0cb?style=flat-square)
-![GCP](https://img.shields.io/badge/gcp-ffb6c1?style=flat-square)
-![RAG](https://img.shields.io/badge/rag-ffd6e0?style=flat-square)
-![PyMuPDF](https://img.shields.io/badge/pymupdf-ffe4e1?style=flat-square)
-
-</td>
-<td width="50%" valign="top">
-<div align="center">
-
-### 🐱 nixly
-
-</div>
-
-**gamified photo cleanup, RPG-style**
-
-A swipe-based photo declutter app — keep, delete, or revisit — wrapped in a cat sanctuary progression system. Built on Expo with custom gesture handling (no Reanimated).
-
-- 3-card swipe stack via `PanResponder`
-- real device photo access via `expo-media-library`
-- sprint-based: recently-deleted recovery → goblin detection + XP
-
-![React Native](https://img.shields.io/badge/react_native-ffc0cb?style=flat-square)
-![Expo](https://img.shields.io/badge/expo-ffb6c1?style=flat-square)
-![TypeScript](https://img.shields.io/badge/typescript-ffd6e0?style=flat-square)
+![Python](https://img.shields.io/badge/python-ffc0cb?style=flat-square&logoColor=black)
+![FastAPI](https://img.shields.io/badge/fastapi-ffb6c1?style=flat-square&logoColor=black)
+![MCP](https://img.shields.io/badge/mcp-ffd6e0?style=flat-square&logoColor=black)
+![Groq](https://img.shields.io/badge/groq-ffe4e1?style=flat-square&logoColor=black)
+![React](https://img.shields.io/badge/react-fff0f5?style=flat-square&logoColor=black)
+![Postgres](https://img.shields.io/badge/postgres-ffc0cb?style=flat-square&logoColor=black)
 
 </td>
 </tr>
@@ -128,6 +89,9 @@ A swipe-based photo declutter app — keep, delete, or revisit — wrapped in a 
 
 | 🌸 | project | stack |
 |---|---|---|
+| 🐱 | **nixly** *(ongoing)* — gamified photo cleanup: swipe to keep, delete, or revisit, wrapped in a cat sanctuary progression system | `react native` `expo` `typescript` |
+| 🧬 | **long-term care plan curator** — agents that turn social determinants of health + clinical data into personalized care guidelines for copd & diabetes | `agents` `clinical data` `risk modeling` |
+| 📄 | **contract mining assistant** — rag chatbot to query, edit & version dense pharmacy contracts, grounded in the real text | `vertex ai` `gcp` `rag` `pymupdf` |
 | 🏫 | **campus connect** — microservices platform for students, faculty & admins · role-based access, events & resources | `spring boot` `jwt` `eureka` `react` `mysql` |
 
 </div>
@@ -138,19 +102,58 @@ A swipe-based photo declutter app — keep, delete, or revisit — wrapped in a 
 
 ## 🛠️ tech stack
 
-![Python](https://img.shields.io/badge/Python-FFC0CB?style=for-the-badge&logo=python&logoColor=black)
-![FastAPI](https://img.shields.io/badge/FastAPI-FFB6C1?style=for-the-badge&logo=fastapi&logoColor=black)
-![LangChain](https://img.shields.io/badge/LangChain-FFF0F5?style=for-the-badge)
-![Azure](https://img.shields.io/badge/Azure_AI_Foundry-FFE4E1?style=for-the-badge&logo=microsoftazure&logoColor=black)
-![GCP](https://img.shields.io/badge/Vertex_AI-FFC0CB?style=for-the-badge&logo=googlecloud&logoColor=black)
-![AWS](https://img.shields.io/badge/AWS-FFE4E1?style=for-the-badge&logo=amazonaws&logoColor=black)
-<br/>
-![Java](https://img.shields.io/badge/Java-FFB6C1?style=for-the-badge&logo=java&logoColor=black)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-FFC0CB?style=for-the-badge&logo=springboot&logoColor=black)
-![React](https://img.shields.io/badge/React-FFE4E1?style=for-the-badge&logo=react&logoColor=black)
-![React Native](https://img.shields.io/badge/React_Native-FFC0CB?style=for-the-badge&logo=react&logoColor=black)
-![MySQL](https://img.shields.io/badge/MySQL-FFF0F5?style=for-the-badge&logo=mysql&logoColor=black)
-![Git](https://img.shields.io/badge/Git-FFB6C1?style=for-the-badge&logo=git&logoColor=black)
+<table>
+<tr>
+<td align="right"><b>ai &amp; agents</b></td>
+<td>
+<img alt="claude api" src="https://img.shields.io/badge/claude_api-ffe5ec?style=for-the-badge&logo=anthropic&logoColor=b8456b" />
+<img alt="mcp" src="https://img.shields.io/badge/mcp-ffc2d1?style=for-the-badge&logo=modelcontextprotocol&logoColor=b8456b" />
+<img alt="groq" src="https://img.shields.io/badge/groq-ffb3c6?style=for-the-badge" />
+<img alt="langchain" src="https://img.shields.io/badge/langchain-ff8fab?style=for-the-badge&logo=langchain&logoColor=white" />
+<img alt="vertex ai" src="https://img.shields.io/badge/vertex_ai-fb6f92?style=for-the-badge&logo=googlecloud&logoColor=white" />
+<img alt="azure ai foundry" src="https://img.shields.io/badge/azure_ai_foundry-fb6f92?style=for-the-badge" />
+</td>
+</tr>
+<tr>
+<td align="right"><b>backend</b></td>
+<td>
+<img alt="python" src="https://img.shields.io/badge/python-ffe5ec?style=for-the-badge&logo=python&logoColor=b8456b" />
+<img alt="fastapi" src="https://img.shields.io/badge/fastapi-ffc2d1?style=for-the-badge&logo=fastapi&logoColor=b8456b" />
+<img alt="sqlalchemy" src="https://img.shields.io/badge/sqlalchemy-ffb3c6?style=for-the-badge&logo=sqlalchemy&logoColor=b8456b" />
+<img alt="java" src="https://img.shields.io/badge/java-ff8fab?style=for-the-badge&logo=openjdk&logoColor=white" />
+<img alt="spring boot" src="https://img.shields.io/badge/spring_boot-fb6f92?style=for-the-badge&logo=springboot&logoColor=white" />
+</td>
+</tr>
+<tr>
+<td align="right"><b>data</b></td>
+<td>
+<img alt="postgresql" src="https://img.shields.io/badge/postgresql-ffe5ec?style=for-the-badge&logo=postgresql&logoColor=b8456b" />
+<img alt="neon" src="https://img.shields.io/badge/neon-ffc2d1?style=for-the-badge&logo=neon&logoColor=b8456b" />
+<img alt="sqlite" src="https://img.shields.io/badge/sqlite-ffb3c6?style=for-the-badge&logo=sqlite&logoColor=b8456b" />
+<img alt="mysql" src="https://img.shields.io/badge/mysql-ff8fab?style=for-the-badge&logo=mysql&logoColor=white" />
+</td>
+</tr>
+<tr>
+<td align="right"><b>frontend &amp; mobile</b></td>
+<td>
+<img alt="react" src="https://img.shields.io/badge/react-ffe5ec?style=for-the-badge&logo=react&logoColor=b8456b" />
+<img alt="react native" src="https://img.shields.io/badge/react_native-ffc2d1?style=for-the-badge&logo=react&logoColor=b8456b" />
+<img alt="expo" src="https://img.shields.io/badge/expo-ffb3c6?style=for-the-badge&logo=expo&logoColor=b8456b" />
+<img alt="typescript" src="https://img.shields.io/badge/typescript-ff8fab?style=for-the-badge&logo=typescript&logoColor=white" />
+<img alt="vite" src="https://img.shields.io/badge/vite-fb6f92?style=for-the-badge&logo=vite&logoColor=white" />
+</td>
+</tr>
+<tr>
+<td align="right"><b>cloud &amp; tools</b></td>
+<td>
+<img alt="render" src="https://img.shields.io/badge/render-ffe5ec?style=for-the-badge&logo=render&logoColor=b8456b" />
+<img alt="vercel" src="https://img.shields.io/badge/vercel-ffc2d1?style=for-the-badge&logo=vercel&logoColor=b8456b" />
+<img alt="gcp" src="https://img.shields.io/badge/gcp-ffb3c6?style=for-the-badge&logo=googlecloud&logoColor=b8456b" />
+<img alt="aws" src="https://img.shields.io/badge/aws-ff8fab?style=for-the-badge" />
+<img alt="git" src="https://img.shields.io/badge/git-fb6f92?style=for-the-badge&logo=git&logoColor=white" />
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -174,13 +177,9 @@ A swipe-based photo declutter app — keep, delete, or revisit — wrapped in a 
 
 <div align="center">
 
-## 📊 github stats
+## 🚀 my contributions, under attack
 
-<img src="https://github-readme-stats.vercel.app/api?username=nith2212&show_icons=true&title_color=e8a0b4&icon_color=ffb6c1&text_color=c9748a&bg_color=fff0f5&hide_border=true&ring_color=ffb6c1" height="160"/>
-&nbsp;
-<img src="https://streak-stats.demolab.com?user=nith2212&background=fff0f5&ring=e8a0b4&fire=ff9eb5&currStreakLabel=e8a0b4&sideLabels=c9748a&dates=c9748a&hide_border=true&stroke=ffd6e0" height="160"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nith2212&layout=compact&title_color=e8a0b4&text_color=c9748a&bg_color=fff0f5&hide_border=true" height="140"/>
+<img width="100%" alt="a pink spaceship shooting down my GitHub contribution graph" src="game.gif" />
 
 </div>
 
